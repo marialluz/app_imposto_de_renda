@@ -1,10 +1,12 @@
 // Declarando a variável que será o salário final(líquido) do usuário
 var salarioLiquido = 0;
 
+//Função que remove a classe "hidden" para mostrar o elemento
 function mostrarDiv(divId) {
   document.getElementById(divId).classList.remove("hidden");
 }
 
+//Função que adiciona a classe "hidden" para esconder o elemento
 function esconderDiv(divId) {
   document.getElementById(divId).classList.add("hidden");
 }
@@ -12,12 +14,16 @@ function calcularImposto() {
   /**
    * Recebendo o salário bruto do usuário, o parseFloat garante que o
    * valor seja um número decimal e não uma string
+   * 
+   * No lugar de utilizar o prompt para receber os dados do usuário, foi 
+   * utilizado document.getElementById que busca o elemento pelo ID 
    */
   var salarioBruto = parseFloat(document.getElementById("salarioBruto").value);
-   
+  
+  // Verifica se o usuário digitou um salário válido
   if(isNaN(salarioBruto) || !salarioBruto){
     alert("Digite um salário válido")
-    return
+    return // para de executar a função
   }
 
   // Declarando a variável de desconto do INSS
@@ -82,9 +88,9 @@ function calcularImposto() {
   }
 
   // Exibindo o resultado do algoritmo (salário líquido do usuário)
-  //alert(salarioLiquido.toFixed(2));
 
   mostrarDiv("mostrarResultadoDiv");
   esconderDiv("calcularImpostoDiv");
+  // Busca o elemento pelo ID e passa o resultado para o seu conteúdo
   document.getElementById("salarioLiquido").innerHTML = salarioLiquido.toFixed(2);
 }

@@ -1,39 +1,39 @@
-/* para esconder a secção que estiver na classe hidden */
+/* Para esconder o elemento que estiver com a classe hidden */
 .hidden {
   display: none;
 }
 
-/* aplicando o plano de fundo em forma de gradiente com as cores rosa lilás e roxo */
+/* Aplicando o plano de fundo em forma de gradiente com as cores rosa lilás e roxo */
 body {
   background: linear-gradient(to right, #ffbae5, #cb6ce6, #5e17eb);
   font-family: "Roboto Slab", serif;
 }
 
 .imageContainer {
-  /* espaçamento no topo de 80 pixels */
+  /* Espaçamento no topo de 80 pixels */
   margin-top: 120px;
-  /* define a largura do elemento para o máximo possível*/
+  /* Define a largura do elemento para o máximo possível*/
   width: 100%;
 
-  /* muda o display do elemento para flex */
+  /* Muda o display do elemento para flex */
   display: flex;
-  /* define o espaçamento entre os filhos do elemento*/
+  /* Define o espaçamento entre os filhos do elemento*/
   justify-content: space-between;
 }
 
-/* define dimensões da logo da UFRN */
+/* Define dimensões da logo da UFRN */
 .logoUFRN {
   width: 200px;
   height: 75px;
 }
 
-/* define dimensões da logo da ECT */
+/* Define dimensões da logo da ECT */
 .logoECT {
   width: 200px;
   height: 100px;
 }
 
-/* define dimensões do botão */
+/* Define dimensões do botão */
 .botao {
   height: 40px;
   border: none;
@@ -46,12 +46,13 @@ body {
   cursor: pointer;
 }
 
+/* Muda o estilo do botão quando o mouse passa por cima */
 .botao:hover {
   background-color: #bb99ff;
   color: #ffffff;
 }
 
-/* define características do título */
+/* Define características do título */
 .titulo {
   color: #ffffff;
   text-shadow: 2px 2px 0px #181b23;
@@ -60,6 +61,7 @@ body {
   font-weight: 400;
 }
 
+/* Define o tamanho do elemento e alinha o conteúdo ao centro */
 .entrada {
   width: 100%;
   display: flex;
@@ -68,11 +70,13 @@ body {
   margin-top: 60px;
 }
 
+/* Define os estilos do parágrafo que está dentro da div .entrada*/
 .entrada > p {
   font-size: 28px;
   margin-right: 20px;
 }
 
+/* Define os estilos do input que está dentro da div .entrada*/
 .entrada > input {
   height: 35px;
   border: none;
@@ -80,12 +84,14 @@ body {
   font-size: 20px;
 }
 
+/* Define os estilos do resultado final (p com a classe .resultado) */
 .resultado {
   text-align: center;
   font-size: 40px;
   margin-top: 50px;
 }
 
+/* Define os estilos do link para recarregar a página */
 .voltar {
   color: #ffffff;
   text-shadow: 2px 2px 0px #181b23;
@@ -99,6 +105,7 @@ body {
   transition: all 0.3s;
 }
 
+/* Define os estilos da imagem que está dentro do link .voltar */
 .voltar > img {
   width: 35px;
   height: 35px;
@@ -106,32 +113,33 @@ body {
   filter: drop-shadow(3px 3px 2px #181b23);
 }
 
+/* Muda a posição do link quando o mouse passa por cima */
 .voltar:hover{
   left: 70px;
 }
 
-/* elemento principal */
+/* Elemento principal */
 main {
-  /* define o tamanho do elemento para 100% */
+  /* Define o tamanho do elemento para 100% */
   height: 100%;
   width: 100%;
 
-  /* altera o display do elemento para flex */
+  /* Altera o display do elemento para flex */
   display: flex;
 
-  /* define a largura máxima */
+  /* Define a largura máxima */
   max-width: 1080px;
 
-  /* centraliza o elemento */
+  /* Centraliza o elemento */
   margin: 0 auto;
 
-  /* altera o direcionamento do flex */
+  /* Altera o direcionamento do flex */
   flex-direction: column;
 
-  /* alinha os filhos do elemento ao centro */
+  /* Alinha os filhos do elemento ao centro */
   justify-content: center;
   align-items: center;
 
-  /* define a altura mínima */
+  /* Define a altura mínima */
   min-height: 100vh;
 }

@@ -4,35 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importa o script principal: o main.js -->
     <script src="../scripts/main.js"></script>
+
+    <!-- Importa o arquivo de estilo: pagina1.css -->
     <link rel="stylesheet" href="../styles/pagina1.css" />
 
+    <!-- Carrega a fonte escolhida: Roboto Slab do Google fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Define o titulo do documento -->
     <title>Cálculo do Imposto de Renda</title>
   </head>
 
   <body>
     <main>
+      <!-- Container/seção do formulário do imposto de renda -->
       <div id="calcularImpostoDiv">
+        <!-- Título principal da página -->
         <h1 class="titulo">Cálculo do Imposto de Renda</h1>
-
+        <!-- Formulário para calcular o imposto -->
         <form id="formImposto">
+          <!-- Seção do input do salário e sua respectiva descrição -->
           <div class="entrada">
             <p>Digite o salário bruto:</p>
             <input id="salarioBruto" type="number"/>
           </div>
+          <!-- Botão que realiza o cálculo chamando a função calcularImposto -->
           <button type="button" onclick="calcularImposto()" class="botao">
             Calcular
           </button>
         </form>
       </div>
 
+      <!-- Seção que mostra o resultado do cálculo -->
+      <!-- A visibilidade dessa div é controlada pelo javascript -->
       <div class="hidden" id="mostrarResultadoDiv">
+        <!-- Link para recarregar a página -->
         <a href="index.html" class="voltar">
           <img
             src="./images/arrow-left.svg"
@@ -40,11 +53,12 @@
           />
           Voltar
         </a>
+        <!-- Resultado do cálculo e sua respectiva descrição -->
         <h1 class="titulo">Salário Líquido</h1>
 
         <p class="resultado">R$ <span id="salarioLiquido"></span></p>
       </div>
-
+      <!-- Seção das imagens (logoUFRN e logoECT) -->
       <div class="imageContainer">
         <img src="./images/logoUFRN.png" alt="Logo UFRN" class="logoUFRN" />
         <img src="./images/logoECT.png" alt="Logo ECT" class="logoECT" />
