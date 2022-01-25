@@ -1,0 +1,137 @@
+/* para esconder a secção que estiver na classe hidden */
+.hidden {
+  display: none;
+}
+
+/* aplicando o plano de fundo em forma de gradiente com as cores rosa lilás e roxo */
+body {
+  background: linear-gradient(to right, #ffbae5, #cb6ce6, #5e17eb);
+  font-family: "Roboto Slab", serif;
+}
+
+.imageContainer {
+  /* espaçamento no topo de 80 pixels */
+  margin-top: 120px;
+  /* define a largura do elemento para o máximo possível*/
+  width: 100%;
+
+  /* muda o display do elemento para flex */
+  display: flex;
+  /* define o espaçamento entre os filhos do elemento*/
+  justify-content: space-between;
+}
+
+/* define dimensões da logo da UFRN */
+.logoUFRN {
+  width: 200px;
+  height: 75px;
+}
+
+/* define dimensões da logo da ECT */
+.logoECT {
+  width: 200px;
+  height: 100px;
+}
+
+/* define dimensões do botão */
+.botao {
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+  background-color: #ffffff;
+  font-size: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #bb99ff;
+  color: #ffffff;
+}
+
+/* define características do título */
+.titulo {
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #181b23;
+  font-size: 45px;
+  margin-top: 90px;
+  font-weight: 400;
+}
+
+.entrada {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.entrada > p {
+  font-size: 28px;
+  margin-right: 20px;
+}
+
+.entrada > input {
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.resultado {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.voltar {
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #181b23;
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  transition: all 0.3s;
+}
+
+.voltar > img {
+  width: 35px;
+  height: 35px;
+  -webkit-filter: drop-shadow(3px 3px 2px #181b23);
+  filter: drop-shadow(3px 3px 2px #181b23);
+}
+
+.voltar:hover{
+  left: 70px;
+}
+
+/* elemento principal */
+main {
+  /* define o tamanho do elemento para 100% */
+  height: 100%;
+  width: 100%;
+
+  /* altera o display do elemento para flex */
+  display: flex;
+
+  /* define a largura máxima */
+  max-width: 1080px;
+
+  /* centraliza o elemento */
+  margin: 0 auto;
+
+  /* altera o direcionamento do flex */
+  flex-direction: column;
+
+  /* alinha os filhos do elemento ao centro */
+  justify-content: center;
+  align-items: center;
+
+  /* define a altura mínima */
+  min-height: 100vh;
+}
